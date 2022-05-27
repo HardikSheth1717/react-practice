@@ -47,7 +47,7 @@ function App() {
             <RadioButton
               value="none"
               id="female"
-              name="gendert"
+              name="gender"
             >Female</RadioButton>
           </BorderedPanel>
 

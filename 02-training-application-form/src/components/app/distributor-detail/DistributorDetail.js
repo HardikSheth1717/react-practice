@@ -1,8 +1,6 @@
 import './DistributorDetail.css';
 import LabeledSingleLineTextBox from '../../ui-controls/text-box/labeled-single-line/LabeledSingleLineTextBox';
 import AddressBox from '../address/AddressBox';
-import PrivacyPolicy from '../privacy-policy/PrivacyPolicy';
-import Button from '../../ui-controls/button/Button';
 
 const DistributorDetail = props => {
     return (
@@ -13,10 +11,6 @@ const DistributorDetail = props => {
             <AddressBox title="Distributor Address" />
             <LabeledSingleLineTextBox title="Phone" name="name" />
             <LabeledSingleLineTextBox title="Fax" name="name" />
-            <PrivacyPolicy />
-            <div className="btn-block">
-                <Button>Send</Button>
-            </div>
         </div>
     );
 };

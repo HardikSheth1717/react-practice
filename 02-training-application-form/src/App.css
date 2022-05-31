@@ -37,3 +37,8 @@ form {
   background: #fff;
   box-shadow: 0 0 20px 0 #095484;
 }
+
+.btn-block {
+  margin-top: 10px;
+  text-align: center;
+}

@@ -6,6 +6,8 @@ import Banner from './components/app/banner/Banner';
 import ApplicantDetail from './components/app/applicant-detail/ApplicantDetail';
 import CourseDetail from './components/app/course-detail/CourseDetail';
 import DistributorDetail from './components/app/distributor-detail/DistributorDetail';
+import PrivacyPolicy from './components/app/privacy-policy/PrivacyPolicy';
+import Button from './components/ui-controls/button/Button';
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
         <ApplicantDetail />
         <CourseDetail />
         <DistributorDetail />
+        <PrivacyPolicy />
+        <div className="btn-block">
+          <Button>Send</Button>
+        </div>
       </Form>
     </RoundedContainer>
   );

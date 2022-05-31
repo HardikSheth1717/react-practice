@@ -4,6 +4,8 @@ import RoundedContainer from './components/shared/rouded-container/RoundedContai
 import Form from './components/ui-controls/form/Form';
 import Banner from './components/app/banner/Banner';
 import ApplicantDetail from './components/app/applicant-detail/ApplicantDetail';
+import CourseDetail from './components/app/course-detail/CourseDetail';
+import DistributorDetail from './components/app/distributor-detail/DistributorDetail';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Form action="/">
         <Banner>Training Application Form</Banner>
         <ApplicantDetail />
+        <CourseDetail />
+        <DistributorDetail />
       </Form>
     </RoundedContainer>
   );

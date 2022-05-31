@@ -1,0 +1,24 @@
+select {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+}
+
+@media (min-width: 568px) {
+    .city-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .city-item input {
+        width: calc(50% - 20px);
+    }
+
+    .city-item select {
+        width: calc(50% - 8px);
+    }
+}

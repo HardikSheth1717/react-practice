@@ -5,7 +5,7 @@ const EmailTextBox = props => {
     return (
         <div>
             <Label controlId="icon" forid={props.id}>
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
             </Label>
             <input
                 type="text"

@@ -5,7 +5,7 @@ const PasswordTextBox = props => {
     return (
         <div>
             <Label controlId="icon" forid={props.id}>
-              <i class="fas fa-unlock-alt"></i>
+              <i className="fas fa-unlock-alt"></i>
             </Label>
             <input
                 type="password"

@@ -1,7 +1,11 @@
 import './Button.css';
 
 const Button = props => {
-    return <button type="submit" href="/">{props.children}</button>;
+    const onClickHandler = event => {
+        props.onClickButton();
+    };
+
+    return <button type="button" onClick={onClickHandler} href="/">{props.children}</button>;
 };
 
 export default Button;

@@ -6,7 +6,7 @@ const LabeledDateTextBox = props => {
         <FormItem>
             <p>{props.title}</p>
             <input type="date" name={props.name} placeholder={props.placeHolder} />
-            <i class="fas fa-calendar-alt"></i>
+            <i className="fas fa-calendar-alt"></i>
         </FormItem>
     );
 };

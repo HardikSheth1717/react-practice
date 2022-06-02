@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 
 import RoundedContainer from './components/shared/rouded-container/RoundedContainer';
@@ -10,11 +11,28 @@ import PrivacyPolicy from './components/app/privacy-policy/PrivacyPolicy';
 import Button from './components/ui-controls/button/Button';
 
 function App() {
+  const [ formData, setFormData ] = useState({
+    applicantDetail: {},
+    courseDetail: {},
+    distributorDetail: {}
+  });
+
+  const applicantDataHandler = data => {
+    console.log(data);
+    setFormData(prevState => {
+      return {
+        ...prevState,
+        applicantDetail: data
+      };
+    });
+
+  };
+
   return (
     <RoundedContainer>
       <Form action="/">
         <Banner>Training Application Form</Banner>
-        <ApplicantDetail />
+        <ApplicantDetail onSubmitApplicantData={applicantDataHandler} />
         <CourseDetail />
         <DistributorDetail />
         <PrivacyPolicy />

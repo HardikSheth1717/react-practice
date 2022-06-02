@@ -5,7 +5,7 @@ const SingeLineTextBox = props => {
     return (
         <div>
             <Label controlId="icon" forid={props.id}>
-                <i class={props.iconClass}></i>
+                <i className={props.iconClass}></i>
             </Label>
             <input
                 type="text"

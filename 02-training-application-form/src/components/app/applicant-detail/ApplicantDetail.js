@@ -7,7 +7,15 @@ import Button from '../../ui-controls/button/Button';
 import AddressBox from '../address/AddressBox';
 
 const ApplicantDetail = props => {
-    const [applicant, setApplicant] = useState({
+    const [applicant, setApplicant] = useState(props.applicantData ? {
+        firstName: props.applicantData.firstName,
+        lastName: props.applicantData.lastName,
+        phone: props.applicantData.phone,
+        fax: props.applicantData.fax,
+        email: props.applicantData.email,
+        companyName: props.applicantData.companyName,
+        address: props.applicantData.address
+    } : {
         firstName: props.firstName,
         lastName: props.lastName,
         phone: props.phone,
@@ -122,10 +130,10 @@ const ApplicantDetail = props => {
                 name="txtCompanyName"
                 onChangeText={companyChangeHandler}
             />
-            <AddressBox 
-            title="Address" 
-            addressDetail={applicant.address}
-            onUpdateContent={addressDetailUpdateHandler}
+            <AddressBox
+                title="Address"
+                addressDetail={applicant.address}
+                onUpdateContent={addressDetailUpdateHandler}
             />
             <div className="btn-block">
                 <Button
